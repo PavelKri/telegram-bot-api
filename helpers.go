@@ -753,6 +753,13 @@ func NewCallback(id, text string) CallbackConfig {
 		ShowAlert:       false,
 	}
 }
+func NewCallbackStartGame(id, url string) CallbackConfig {
+	return CallbackConfig{
+		CallbackQueryID: id,
+		URL:             url,
+		ShowAlert:       false,
+	}
+}
 
 // NewCallbackWithAlert creates a new callback message that alerts
 // the user.
